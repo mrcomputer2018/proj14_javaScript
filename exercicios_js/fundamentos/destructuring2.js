@@ -1,6 +1,6 @@
 // Operador que tira da estrutura uma coisa // Estrutura seria um Array
 
-/** Constante literal de objeto - const/chave/valor */
+/** Constante literal de array - const/chave/valor */
 const [a] = [10]
 console.log(a) // 10
 

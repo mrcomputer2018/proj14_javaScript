@@ -1,0 +1,1 @@
+// Operador que tira da estrutura uma coisa // Estrutura seria um Array
