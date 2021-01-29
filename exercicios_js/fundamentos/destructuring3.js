@@ -1,7 +1,7 @@
 // Operador que tira da estrutura uma coisa // Estrutura seria uma Funcao com objeto
 function rand({min = 0, max = 1000}) {
     const valor = Math.random() * (max-min)+ min
-    return Math.floor(valor) // Floor - Retorna o maior inteiro menor ou igual ao seu numérico
+    return Math.floor(valor) // Floor - arredonda para baixo
 }
 
 const obj = {min: 50, max: 60}
