@@ -16,9 +16,17 @@
         var consumoComGasolina = distanciaComGasolina / tanque
         document.write('O consumo de gasolina foi de : ' + consumoComGasolina.toFixed(2) + ' Litros')
 
+        var precoGasolina = 2.90
+        var precoPorKilometroGasolina = consumoComGasolina / precoGasolina
+        document.write('<br> O preco por quilometro de gasolina é: R$ ' + precoPorKilometroGasolina.toFixed(2))
+
         var distanciaComAlcool = 300
         var consumoComAlcool = distanciaComAlcool / tanque
         document.write('<br><br>O consumo de alcool foi de: ' + consumoComAlcool.toFixed(2) + ' Litros')
+
+        var precoAlcool = 2.40
+        var precoPorKilometroAlcool = consumoComAlcool / precoAlcool
+        document.write('<br>O preço por quilometro de alcool é de: R$ ' + precoPorKilometroAlcool.toFixed|(2))
 
     </script>
 </body>
