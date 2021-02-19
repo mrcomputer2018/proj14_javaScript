@@ -17,7 +17,7 @@
         function pulaLinha () {
             document.write('<br>')
             document.write('<hr>')
-            document.write('<br')
+            document.write('<br>')
         }
 
         function mostra (frase) {
@@ -26,7 +26,7 @@
         }
 
         function calculoDiasDeVida (idade) {
-            return ( idade * 365)
+            return (idade * 365)
         }
 
         function calculoBatimentosCardiocos(diasDeVida) {
@@ -34,14 +34,14 @@
         }
 
         /** Codigo */
-        var nome = prompt('Bom dia! Qual o seu nome?')
-        var idade = prompt(nome + '. Digite a sua Idade')
+        var nome = prompt("Bom dia! Qual o seu nome?")
+        var idade = prompt(nome + ". Digite a sua Idade")
 
         var diasDeVida = calculoDiasDeVida(idade)
-        var batimentosCardiacos = calculoBatimentosCardiocos(diasDeVida)
+       
+        mostra(nome + ". Voce tem " + diasDeVida + " dias de vida")
 
-        mostra(nome + '. Voce tem ' + diasDeVida + ' dias de vida')
-        mostra(nome + 'Seu coracao ja bateu :' + batimentosCardiacos + ' vezes')
+        mostra(nome + ". Seu coracao ja bateu :" + calculoBatimentosCardiocos(diasDeVida) + " vezes")
 
     </script>
 </body>
