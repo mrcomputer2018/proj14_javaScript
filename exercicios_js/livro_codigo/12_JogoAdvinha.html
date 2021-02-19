@@ -44,27 +44,32 @@
         
         mostra("")
         mostra("Descubra o numero que foi sorteado")
-        mostra("")
-        
+        pula()
+
         var  chute = -1
         var tentativas = 1
 
         while(chute != numeroSorteado) {
             var chute = parseInt(prompt("Ja pensou?  Digite o numero que pensou: "))
-                       
-            if (chute < numeroSorteado) {
+            
+            if (isNaN(chute)) {
+                mostra("<h4>Por favor digite apenas numeros!!!!")
+            }
+            else {
+                if (chute < numeroSorteado) {
                 document.write("Voce chutou um numero menor. Tente novamente.")
                 pula()
                 tentativas = tentativas + 1
-            }
-            else{
-                if (chute > numeroSorteado) {
-                document.write("Voce chutou um numero maior. Tente novamente.")
-                pula()
-                tentativas = tentativas + 1
                 }
-                else {
-                    mostra("Você acertou!!!! O numero sorteado era " + numeroSorteado + ". Numero de tentativas: " +  tentativas)
+                else{
+                    if (chute > numeroSorteado) {
+                    document.write("Voce chutou um numero maior. Tente novamente.")
+                    pula()
+                    tentativas = tentativas + 1
+                    }
+                    else {
+                        mostra("<h4>Você acertou!!!! O numero sorteado era " + numeroSorteado + ". Numero de tentativas: " +  tentativas)
+                    }
                 }
             }
         }
