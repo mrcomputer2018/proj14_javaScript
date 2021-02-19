@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jogo Advinha Numero</h1>
+    <h1>Jogo do Advinha Numero</h1>
 
     <script>
         // Funcao
+        function pula () {
+            document.write("<br><br>")
+        }
+
         function pulaLinha () {
             document.write("<br>")
             document.write("<hr>")
@@ -26,31 +31,44 @@
             return Math.round(Math.random(intervalo) * 100)
         }
 
+        function exibeDados(dado) {
+            document.write(dado)
+            pula()
+        }
+
         // Codigo
 
         /** Math.round - arredonda o resultado do random */
         var intervalo = parseInt(prompt("Digite um numero para intervalo de sorteio: "))
         var numeroSorteado = sorteio(intervalo)
-
-        mostra()
+        
+        mostra("")
         mostra("Descubra o numero que foi sorteado")
-
-        var chute = parseInt(prompt("Ja pensou? Digite o humero que acha:"))
+        mostra("")
+        
+        var  chute = -1
+        var tentativas = 1
 
         while(chute != numeroSorteado) {
-            var tentativas = 1
+            var chute = parseInt(prompt("Ja pensou?  Digite o numero que pensou: "))
+                       
             if (chute < numeroSorteado) {
                 document.write("Voce chutou um numero menor. Tente novamente.")
+                pula()
                 tentativas = tentativas + 1
             }
             else{
-                document.write("Voce chutou um numero menor. Tente novamente.")
+                if (chute > numeroSorteado) {
+                document.write("Voce chutou um numero maior. Tente novamente.")
+                pula()
                 tentativas = tentativas + 1
+                }
+                else {
+                    mostra("Você acertou!!!! O numero sorteado era " + numeroSorteado + ". Numero de tentativas: " +  tentativas)
+                }
             }
         }
-        var tentativasFinal = tentativas
-
-        mostra("Você acertou!!!! O numero soretado era " + numeroSorteado + ". Numero de tentativas: " +  tentativasFinal)
+               
     </script>
 </body>
 </html>
