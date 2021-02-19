@@ -10,10 +10,16 @@
     <h1>Ano de Copa</h1>
 
     <script>
+        // Funcao
+        function mostra(frase) {
+            document.write(frase + "<br>")
+        }
+
+        // codigo
         var anoDeCopa = 1930
 
-        while (anoDeCopa < 2014) {
-            document.write(anoDeCopa + " tem copa!!!!")
+        while (anoDeCopa <= 2014) {
+            mostra(anoDeCopa + " tem copa!!!!")
             anoDeCopa = anoDeCopa + 4
         }
     </script>
