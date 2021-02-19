@@ -22,17 +22,35 @@
             pulaLinha()
         }
 
+        function sorteio(intervalo) {
+            return Math.round(Math.random(intervalo) * 100)
+        }
+
         // Codigo
 
         /** Math.round - arredonda o resultado do random */
-        var numeroSorteado = Math.round(Math.random() * 100)
+        var intervalo = parseInt(prompt("Digite um numero para intervalo de sorteio: "))
+        var numeroSorteado = sorteio(intervalo)
 
+        mostra()
         mostra("Descubra o numero que foi sorteado")
 
         var chute = parseInt(prompt("Ja pensou? Digite o humero que acha:"))
-        
 
+        while(chute != numeroSorteado) {
+            var tentativas = 1
+            if (chute < numeroSorteado) {
+                document.write("Voce chutou um numero menor. Tente novamente.")
+                tentativas = tentativas + 1
+            }
+            else{
+                document.write("Voce chutou um numero menor. Tente novamente.")
+                tentativas = tentativas + 1
+            }
+        }
+        var tentativasFinal = tentativas
 
+        mostra("Você acertou!!!! O numero soretado era " + numeroSorteado + ". Numero de tentativas: " +  tentativasFinal)
     </script>
 </body>
 </html>
