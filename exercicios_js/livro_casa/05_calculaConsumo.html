@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Calculo de Consumo de Gasolina e Alcool
+    </h1>
+
+    <script>
+        function pulaLinha() {
+            document.write('<br><br>')
+            document.write("<hr>");
+        }
+
+        function Mostra(frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+
+        var tanque = 40
+
+        var distanciaGasolina = 480
+        var consumoGasolina = (distanciaGasolina / tanque).toFixed(2)
+        Mostra('Consumo de Gasolina foi de: ' + consumoGasolina + ' Km/Litro')
+        
+        var distanciaAlcool = 300
+        var consumoAlcool =  distanciaAlcool / tanque
+        Mostra('Consumo de Alcool foi de: ' + consumoAlcool.toFixed(2) + ' Km/Litro')
+        
+        var precoDaGasolina = 2.90
+        var precoPorQuiloGasolina = consumoGasolina / precoDaGasolina
+        Mostra('O Preco por Kilometro de gasolina e: R$ ' + precoPorQuiloGasolina.toFixed(2))
+        
+        var precoDoAlcool = 2.40
+        var precoPorQuiloAlcool = consumoAlcool / precoDoAlcool
+        Mostra('O preco por Quilometro de Alcool e: R$ ' + precoPorQuiloAlcool.toFixed(2))
+        
+    </script>
+
+</body>
+</html>

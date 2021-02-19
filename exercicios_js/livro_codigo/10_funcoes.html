@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Uso de funcoes
+    </h1>
+    
+
+    <script>
+        //	funcoes
+        function primeira() {
+        console.log("1	-	antes");
+                        segunda();
+        console.log("1	-	depois");
+        }
+        function segunda() {
+        console.log("2	-	antes");
+                        terceira();
+        console.log("2	-	depois");				
+        }
+        function terceira() {
+        console.log("3");
+        }
+
+        //	codigo	principal
+        primeira();
+
+        // 1	-	antes / 2	-	antes / 3 / 2	-	depois / 1	-	depois
+
+    </script>
+
+</body>
+</html>

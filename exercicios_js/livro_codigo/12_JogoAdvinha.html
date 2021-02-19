@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jogo Advinha Numero</h1>
+
+    <script>
+        // Funcao
+        function pulaLinha () {
+            document.write("<br>")
+            document.write("<hr>")
+            document.write("<br>")
+        }
+
+        function mostra (frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+
+        // Codigo
+
+        /** Math.round - arredonda o resultado do random */
+        var numeroSorteado = Math.round(Math.random() * 100)
+
+        mostra("Descubra o numero que foi sorteado")
+
+        var chute = parseInt(prompt("Ja pensou? Digite o humero que acha:"))
+        
+
+
+    </script>
+</body>
+</html>
