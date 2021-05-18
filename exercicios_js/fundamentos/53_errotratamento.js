@@ -1,6 +1,16 @@
-function imprimiNomeGritado(obj) {
-    console.log(obj.name.toUpperCase())
+function tratarErroELancar () {
+    throw new Error(".......")
 }
 
-const obj = { nome : 'Roberto'}
+function imprimiNomeGritado(obj) {
+    try {
+        console.log(obj.name.toUpperCase() + "!!!!")
+    }
+    catch (e) {
+        tratarErroELancar(e)
+    }
+    
+}
+
+const obj = { nome : "Roberto"}
 imprimiNomeGritado(obj)
