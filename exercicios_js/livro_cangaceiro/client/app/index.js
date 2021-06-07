@@ -2,7 +2,7 @@
 var campos = [
     document.querySelector("#data"),
     document.querySelector("#valor"),
-    doocument.querySelector("#quantidade")
+    document.querySelector("#quantidade")
 ];
 
 console.log(campos);
