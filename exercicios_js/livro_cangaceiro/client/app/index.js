@@ -19,11 +19,11 @@ document.querySelector(".form").addEventListener("submit", function(event){
         var td = document.createElement("td");
 
         //* Atrbui o valor doo campo a td
-        id.textContent = campo.value;
+        td.textContent = campo.value;
 
         //* Adiciona td na tr
         tr.appendChild(td);
     });
-    
+
     alert("Dados criados com sucesso!!!");
 });
