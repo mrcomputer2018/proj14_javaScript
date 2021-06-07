@@ -5,22 +5,21 @@ var campos = [
     document.querySelector("#quantidade")
 ];
 
-console.log(campos);
-
 //* Buscando tbody
 var tbody = document.querySelector("table tbody");
 
 //* Buscando form atraves do evento submit
 document.querySelector(".form").addEventListener("submit", function(event){
+    //* Cancelando a submissao doo formulario
+    event.preventDefault();
+
     var tr = document.createElement("tr");
 
-    campos.forEach(function(campo) {
+    campos.forEach(function(campo){
         //*cria um atd sem informacoes
         var td = document.createElement("td");
-
         //* Atrbui o valor doo campo a td
         td.textContent = campo.value;
-
         //* Adiciona td na tr
         tr.appendChild(td);
     });
