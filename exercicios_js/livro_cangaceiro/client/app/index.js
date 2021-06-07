@@ -24,6 +24,10 @@ document.querySelector(".form").addEventListener("submit", function(event){
         //* Adiciona td na tr
         tr.appendChild(td);
     });
+    // * Nova td que rmazenara o volume da negociacao
+    var tdVolume = document.createElement("td");
+    tdVolume.textContent = campos[1].value*campos[2].value;
+    tr.appendChild(tdVolume);
 
     alert("Dados criados com sucesso!!!");
 });
