@@ -6,3 +6,6 @@ var campos = [
 ];
 
 console.log(campos);
+
+//* Buscando tbody
+var tbody = document.querySelector("table tbody");
