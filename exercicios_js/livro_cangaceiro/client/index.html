@@ -62,6 +62,9 @@
     <script src="./app/domain/negociacao/Negociacao.js"></script>
     <script>
 
+        //* Congelando o objeto
+        // Objeto nao sera modificado por atribuicao
+        Object.freeze(n1);
         //* instanciando objetos
         var n1 = new Negociacao(new Date(), 5, 700);
         var volume = n1.volume;
