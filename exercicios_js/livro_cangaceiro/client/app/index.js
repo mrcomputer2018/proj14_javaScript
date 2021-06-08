@@ -5,6 +5,8 @@ var campos = [
     document.querySelector("#quantidade")
 ];
 
+console.log(campos); // Verificando o conteudo da array
+
 //* Buscando tbody
 var tbody = document.querySelector("table tbody");
 
@@ -28,5 +30,16 @@ document.querySelector(".form").addEventListener("submit", function(event){
     tdVolume.textContent = campos[1].value*campos[2].value;
     tr.appendChild(tdVolume);
 
-    alert("Dados criados com sucesso!!!");
+    //* adicionado a tr
+    tbody.appendChild(tr);
+
+    //* Limpa os campos
+    campos[0].value = "";
+    campos[1].value = 1;
+    campos[2].value = 0;
+
+    //* Focandoo no campo data
+    campos[0].focus();
+
+    alert("Dados cadastrados com sucesso!!!");
 });

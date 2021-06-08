@@ -12,17 +12,17 @@
 <body class="container">
     <h1 class="text-center">negociações</h1>
     <form class="form" action="">
-        <div class="form-group">
+        <div class="form-group mb-2">
             <label for="data">data</label>
             <input type="date" id="data" class="form-group" required autofocus>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mb-2">
             <label for="quantidade">quantidade</label>
             <input type="number" min="1" step="1" id="quantidade" class="form-group" value="1" required>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mb-3">
             <label for="valor">valor</label>
             <input type="number" min="0.01" step="0.01" id="valor" class="form-group" value="0.0" required>
         </div>
@@ -30,11 +30,13 @@
         <button class="btn btn-primary" type="submit">incluir</button>
     </form>
 
-    <div class="text-center">
+    <hr>
+
+    <div class="text-center mt-4">
         <button id="botao-importa" class="btn btn-primary text-center">importar negoociações</button>
         <button id="botao-apaga" class="btn btn-primary text-center">apagar</button>
     </div>
-
+   
     <br>
     <br>
 
