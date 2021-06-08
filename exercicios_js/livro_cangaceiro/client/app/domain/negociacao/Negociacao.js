@@ -4,7 +4,7 @@ class Negociacao {
     //* Construtor
     constructor(data, quantidade, valor) {
         //* data atual
-        this._data = data;
+        this._data = new Date(data.getTime());
         this._quantidade = quantidade;
         this._valor = valor;
 
