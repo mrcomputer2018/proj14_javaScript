@@ -8,4 +8,9 @@ class Negociacao {
         this.quantidade = quantidade;
         this.valor = valor;
     }
+
+    //* Metodo
+    obtemVolume() {
+        return this.quantidade * this.valor;
+    }
 }
