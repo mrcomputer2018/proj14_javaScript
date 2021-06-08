@@ -7,14 +7,15 @@ class Negociacao {
         this._data = data;
         this._quantidade = quantidade;
         this._valor = valor;
-        
+
         //* Congelando a instancia
         Object.freeze(this);
     }
 
     //*Getters
     get data() {
-        return this._data;
+        //* tornando a data imutavel
+        return new Date(this._data.getTime());
     }
 
     get quantidade() {
