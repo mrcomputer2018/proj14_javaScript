@@ -13,6 +13,8 @@ class NegociacaoController {
         //*cancelando submissao de formulario
         event.preventDefault();
 
+        let negociacao = new Negociacao();
+
         console.log(this._inputData.value);
         console.log(parseInt(this._inputQuantidade.value));
         console.log(parseFloat(this._inputValor.value));
