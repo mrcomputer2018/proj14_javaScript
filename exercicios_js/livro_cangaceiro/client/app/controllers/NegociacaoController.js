@@ -4,9 +4,12 @@ class NegociacaoController {
         //*cancelando submissao de formulario
         event.preventDefault();
 
-        let inputData = document.querySelector('#data');
-        let inputQuantidade = document.querySelector('#quantidade');
-        let inputValor = document.querySelector('#valor');
+        //* $ - transformando em querySlector
+        let $ = document.querySelector.bind(document);
+
+        let inputData = $('#data');
+        let inputQuantidade = $('#quantidade');
+        let inputValor = $('#valor');
 
         console.log(inputData.value);
         console.log(parseInt(inputQuantidade.value));
