@@ -4,9 +4,9 @@ class Negociacao {
     //* Construtor
     constructor(_data, _quantidade, _valor) {
          //* data atual
-        Object.assign( this, { _quantidade, _valor });
+        Object.assign(this, { _quantidade, _valor });
        
-        this._data = new Date(data.getTime());
+        this._data = new Date(_data.getTime());
         
         //* Congelando a instancia
         Object.freeze(this);
