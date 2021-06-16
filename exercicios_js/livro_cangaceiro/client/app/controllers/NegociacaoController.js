@@ -7,6 +7,8 @@ class NegociacaoController {
         this._inputQuantidade = $('#quantidade');
         this._inputValor = $('#valor');
         this._negociacoes = new Negociacoes();
+        //* Instanciando NegociacoesView
+        this._negociacoesView = new NegociacoesView();
     }
 
     //* Metodo
