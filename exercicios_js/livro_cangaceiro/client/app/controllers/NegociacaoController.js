@@ -8,7 +8,8 @@ class NegociacaoController {
         this._inputValor = $('#valor');
         this._negociacoes = new Negociacoes();
         //* Instanciando NegociacoesView
-        this._negociacoesView = new NegociacoesView();
+        //* Passando para o construtor o seletor CSS de ID
+        this._negociacoesView = new NegociacoesView('#negociacoes');
     }
 
     //* Metodo
