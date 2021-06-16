@@ -11,6 +11,7 @@ class Negociacoes {
 
     //* Retorna o array interno encapsulado pela classe
     paraArray() {
-        return this._negociacoes;
+        //* Retorna uma nova referencia criada com os itens de this._negociacoes
+        return [].concat(this._negociacoes);
     }
 }

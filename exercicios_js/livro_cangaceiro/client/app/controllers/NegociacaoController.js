@@ -17,6 +17,8 @@ class NegociacaoController {
         //* Cria valor em negociacoes
         this._negociacoes.adiciona(this._criaNegociacao());
 
+        this._negociacoes.paraArray(). length = 0;
+
         //* Imprimi lista com novo elemento
         console.log(this._negociacoes.paraArray());
 
