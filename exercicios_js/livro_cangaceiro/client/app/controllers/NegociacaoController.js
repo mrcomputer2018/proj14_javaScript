@@ -14,6 +14,9 @@ class NegociacaoController {
         //*cancelando submissao de formulario
         event.preventDefault();
 
+        //* Cria valor em negociacoes
+        this._negociacoes.adiciona(this._criaNegociacao());
+
         //* Chamando a conversao
         //* Chamando o metodo estatico
         let negociacao = new Negociacao(DateConverter.paraData(this._inputData.value), 
