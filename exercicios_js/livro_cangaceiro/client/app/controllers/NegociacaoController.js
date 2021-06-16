@@ -17,20 +17,9 @@ class NegociacaoController {
         //* Cria valor em negociacoes
         this._negociacoes.adiciona(this._criaNegociacao());
 
-        //* Chamando a conversao
-        //* Chamando o metodo estatico
-        let negociacao = new Negociacao(DateConverter.paraData(this._inputData.value), 
-                    parseInt(this._inputQuantidade.value), parseFloat(this._inputValor.value));
-
-        //* Incluindo negociacao
-        this._negociacoes.adiciona(negociacao);
-
         //* Imprimi lista com novo elemento
         console.log(this._negociacoes.paraArray());
 
-        //* Chamando o metodo estatico
-        let diaMesAno = DateConverter.paraTexto(negociacao.data);
-        
         //* Limpando Formulario
         this._limpaFormulario();
     }
