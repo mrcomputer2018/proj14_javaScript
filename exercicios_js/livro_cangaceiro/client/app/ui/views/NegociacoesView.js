@@ -5,6 +5,10 @@ class NegociacoesView {
     }
 
     //* Metodo
+    update() {
+        this._elemento.innerHTML = this.template();
+    }
+
     template() {
         return `
             <table class="table table-hover table-bordered">
@@ -26,4 +30,5 @@ class NegociacoesView {
                 </tfoot>
             </table>`
     }
+    
 }
