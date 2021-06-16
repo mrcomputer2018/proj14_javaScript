@@ -1,4 +1,8 @@
 class NegociacoesView {
+    //* Construtor
+    constructor(seletor) {
+        this._elemento = document.querySelector(seletor);
+    }
 
     //* Metodo
     template() {
