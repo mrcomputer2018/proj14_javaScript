@@ -38,7 +38,9 @@ class NegociacaoController {
 
     _criaNegociacao() {
         //* Retorna instancia de negociacao
-        return new Negociacao(DateConverter.paraData(this._inputData.value), 
-                parseInt(this._inputQuantidade.value), parseFloat(this._inputValor.value));
+        return new Negociacao(
+                DateConverter.paraData(this._inputData.value), 
+                parseInt(this._inputQuantidade.value), 
+                parseFloat(this._inputValor.value));
     }
 }
