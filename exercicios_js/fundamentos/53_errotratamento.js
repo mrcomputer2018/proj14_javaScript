@@ -1,6 +1,8 @@
 function tratarErroELancar () {
     // throw new Error(".......")
     // Throw significa lancar
+    // throw true
+    // throw 'mensagem'
     throw {
         nome: erro.name,
         msg: erro.message,
